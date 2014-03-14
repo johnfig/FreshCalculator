@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BC367F8E-FCB5-4781-96E6-FD1C91AFA40A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FreshCalculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>49E6CE91-6E45-47EA-92EF-064DBBC28C6B</key>
+		<string>ssh://github.com/johnfig/FreshCalculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FreshCalculator.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>49E6CE91-6E45-47EA-92EF-064DBBC28C6B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/johnfig/FreshCalculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>49E6CE91-6E45-47EA-92EF-064DBBC28C6B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>49E6CE91-6E45-47EA-92EF-064DBBC28C6B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FreshCalculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

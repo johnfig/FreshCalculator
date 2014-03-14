@@ -1,17 +1,344 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="FIGViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g5z-k9-6D1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ewf-pi-0NC"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWQ-go-0Hx" userLabel="=">
+                                <rect key="frame" x="240" y="400" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56862745098039214" green="0.66666666666666663" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="AwX-NR-5cV"/>
+                                    <constraint firstAttribute="width" constant="80" id="xa0-j2-ELu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" red="0.24313725490196078" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLx-mq-imY">
+                                <rect key="frame" x="160" y="400" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="1" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Ua1-Qx-Ypi"/>
+                                    <constraint firstAttribute="height" constant="80" id="yQv-xU-cGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" red="0.24313725490196078" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F23-ck-Sgm">
+                                <rect key="frame" x="0.0" y="400" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="D1N-7b-hYy"/>
+                                    <constraint firstAttribute="height" constant="80" id="YRz-9v-pii"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbB-YD-5Sh">
+                                <rect key="frame" x="240" y="320" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.66666666669999997" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Wm6-fh-acG"/>
+                                    <constraint firstAttribute="height" constant="80" id="mzh-1z-Mua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubc-qC-rzS">
+                                <rect key="frame" x="240" y="240" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.66666666669999997" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1iV-jD-t2e"/>
+                                    <constraint firstAttribute="width" constant="80" id="uTM-fH-UG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzk-BE-qWR">
+                                <rect key="frame" x="240" y="160" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.66666666669999997" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="d9v-sA-YNn"/>
+                                    <constraint firstAttribute="width" constant="80" id="lll-fL-g9p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-LB-Mog">
+                                <rect key="frame" x="160" y="320" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4Sq-cY-o4Q"/>
+                                    <constraint firstAttribute="width" constant="80" id="BPu-ve-JUj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYl-3F-j0D">
+                                <rect key="frame" x="80" y="320" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HFL-zW-fEh"/>
+                                    <constraint firstAttribute="width" constant="80" id="h2B-wf-caK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dp-2W-JNK">
+                                <rect key="frame" x="0.0" y="320" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="OGA-nd-g5o"/>
+                                    <constraint firstAttribute="width" constant="80" id="Wa6-hq-UNT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dx-TO-uTh">
+                                <rect key="frame" x="160" y="240" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6e9-l5-7ok"/>
+                                    <constraint firstAttribute="height" constant="80" id="GBN-K4-YAT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7D-Ry-m38">
+                                <rect key="frame" x="80" y="240" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="NQV-hp-dhR"/>
+                                    <constraint firstAttribute="height" constant="80" id="jvI-I4-qRS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d5-gm-n0G">
+                                <rect key="frame" x="0.0" y="240" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BIc-LW-Bt3"/>
+                                    <constraint firstAttribute="width" constant="80" id="ubA-Z4-ttm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n09-Ob-Emw">
+                                <rect key="frame" x="160" y="160" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bvc-Tx-BXA"/>
+                                    <constraint firstAttribute="height" constant="80" id="jZ5-zV-32R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoY-oq-W8F">
+                                <rect key="frame" x="80" y="160" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="gR1-Fy-myv"/>
+                                    <constraint firstAttribute="height" constant="80" id="xd8-8t-fni"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-Ai-k68">
+                                <rect key="frame" x="0.0" y="160" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Y9O-Yi-cPi"/>
+                                    <constraint firstAttribute="height" constant="80" id="ah0-y5-hsL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rky-bK-4Si">
+                                <rect key="frame" x="240" y="80" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24313725490196078" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="B8u-O8-5Qn"/>
+                                    <constraint firstAttribute="height" constant="80" id="G8A-79-yKT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="÷">
+                                    <color key="titleColor" red="0.9882352941176471" green="1" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw1-IJ-CI9">
+                                <rect key="frame" x="0.0" y="80" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="na5-L1-tMU"/>
+                                    <constraint firstAttribute="height" constant="80" id="sbc-OV-3Xl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mx0-fW-Pzb">
+                                <rect key="frame" x="160" y="80" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2pn-YM-X2G"/>
+                                    <constraint firstAttribute="height" constant="80" id="7LW-hs-GD0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="%">
+                                    <color key="titleColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yi-pq-T2H">
+                                <rect key="frame" x="80" y="80" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.37647058820000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6ZG-Mb-APA"/>
+                                    <constraint firstAttribute="height" constant="80" id="rQG-OE-8MV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOg-Ee-YHH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.20392156862745098" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.98823529409999999" green="1" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EoY-oq-W8F" firstAttribute="top" secondItem="3Yi-pq-T2H" secondAttribute="bottom" id="0T9-YC-sIR"/>
+                            <constraint firstItem="1dp-2W-JNK" firstAttribute="top" secondItem="4d5-gm-n0G" secondAttribute="bottom" id="2Ra-p9-yh6"/>
+                            <constraint firstItem="pOg-Ee-YHH" firstAttribute="top" secondItem="g5z-k9-6D1" secondAttribute="bottom" constant="-20" id="6As-in-6L3"/>
+                            <constraint firstItem="L7D-Ry-m38" firstAttribute="top" secondItem="EoY-oq-W8F" secondAttribute="bottom" id="6R1-tw-nU8"/>
+                            <constraint firstItem="n09-Ob-Emw" firstAttribute="top" secondItem="Mx0-fW-Pzb" secondAttribute="bottom" id="7Pv-jC-rf1"/>
+                            <constraint firstItem="Ewf-pi-0NC" firstAttribute="top" secondItem="F23-ck-Sgm" secondAttribute="bottom" id="AlW-z1-6Sw"/>
+                            <constraint firstItem="F23-ck-Sgm" firstAttribute="top" secondItem="1dp-2W-JNK" secondAttribute="bottom" id="BKd-9T-kGJ"/>
+                            <constraint firstItem="3Yi-pq-T2H" firstAttribute="leading" secondItem="Sw1-IJ-CI9" secondAttribute="trailing" id="BkV-3P-J6H"/>
+                            <constraint firstItem="7Dx-TO-uTh" firstAttribute="leading" secondItem="L7D-Ry-m38" secondAttribute="trailing" id="BzW-uX-hCE"/>
+                            <constraint firstItem="Ubc-qC-rzS" firstAttribute="leading" secondItem="7Dx-TO-uTh" secondAttribute="trailing" id="CRL-06-AlA"/>
+                            <constraint firstAttribute="trailing" secondItem="rky-bK-4Si" secondAttribute="trailing" id="EyG-yE-XJq"/>
+                            <constraint firstItem="NLx-mq-imY" firstAttribute="leading" secondItem="F23-ck-Sgm" secondAttribute="trailing" id="F5j-3D-et9"/>
+                            <constraint firstItem="kYl-3F-j0D" firstAttribute="top" secondItem="L7D-Ry-m38" secondAttribute="bottom" id="HrK-8k-vdT"/>
+                            <constraint firstItem="rky-bK-4Si" firstAttribute="leading" secondItem="Mx0-fW-Pzb" secondAttribute="trailing" id="IdW-sW-fEy"/>
+                            <constraint firstItem="Ewf-pi-0NC" firstAttribute="top" secondItem="QWQ-go-0Hx" secondAttribute="bottom" id="J2I-Lj-rNK"/>
+                            <constraint firstItem="n09-Ob-Emw" firstAttribute="leading" secondItem="EoY-oq-W8F" secondAttribute="trailing" id="JS1-tL-Tyu"/>
+                            <constraint firstItem="QWQ-go-0Hx" firstAttribute="leading" secondItem="NLx-mq-imY" secondAttribute="trailing" id="Jxd-gA-K9L"/>
+                            <constraint firstItem="EoY-oq-W8F" firstAttribute="leading" secondItem="cxr-Ai-k68" secondAttribute="trailing" id="L9F-RK-MRK"/>
+                            <constraint firstAttribute="trailing" secondItem="Mzk-BE-qWR" secondAttribute="trailing" id="NAu-0V-heC"/>
+                            <constraint firstItem="cxr-Ai-k68" firstAttribute="top" secondItem="Sw1-IJ-CI9" secondAttribute="bottom" id="NQj-vE-JbM"/>
+                            <constraint firstItem="dbB-YD-5Sh" firstAttribute="top" secondItem="Ubc-qC-rzS" secondAttribute="bottom" id="NZ4-l7-ler"/>
+                            <constraint firstAttribute="trailing" secondItem="QWQ-go-0Hx" secondAttribute="trailing" id="Ors-e1-L2d"/>
+                            <constraint firstItem="1vw-LB-Mog" firstAttribute="top" secondItem="7Dx-TO-uTh" secondAttribute="bottom" id="PD1-TO-em7"/>
+                            <constraint firstItem="kYl-3F-j0D" firstAttribute="leading" secondItem="1dp-2W-JNK" secondAttribute="trailing" id="Pea-Lu-oHX"/>
+                            <constraint firstItem="F23-ck-Sgm" firstAttribute="top" secondItem="kYl-3F-j0D" secondAttribute="bottom" id="RE1-he-JUB"/>
+                            <constraint firstAttribute="trailing" secondItem="pOg-Ee-YHH" secondAttribute="trailing" id="SZH-xg-wbc"/>
+                            <constraint firstItem="Mx0-fW-Pzb" firstAttribute="leading" secondItem="3Yi-pq-T2H" secondAttribute="trailing" id="bCo-8f-cnP"/>
+                            <constraint firstItem="QWQ-go-0Hx" firstAttribute="top" secondItem="dbB-YD-5Sh" secondAttribute="bottom" id="bTb-I3-R28"/>
+                            <constraint firstItem="dbB-YD-5Sh" firstAttribute="leading" secondItem="1vw-LB-Mog" secondAttribute="trailing" id="bgI-nK-vte"/>
+                            <constraint firstItem="Ewf-pi-0NC" firstAttribute="top" secondItem="NLx-mq-imY" secondAttribute="bottom" id="byx-Dx-SdY"/>
+                            <constraint firstAttribute="trailing" secondItem="dbB-YD-5Sh" secondAttribute="trailing" id="eWk-eb-dld"/>
+                            <constraint firstItem="1vw-LB-Mog" firstAttribute="leading" secondItem="kYl-3F-j0D" secondAttribute="trailing" id="eve-dm-aZM"/>
+                            <constraint firstItem="NLx-mq-imY" firstAttribute="top" secondItem="1vw-LB-Mog" secondAttribute="bottom" id="g6L-yX-bRz"/>
+                            <constraint firstItem="3Yi-pq-T2H" firstAttribute="top" secondItem="pOg-Ee-YHH" secondAttribute="bottom" id="gXv-E5-dZC"/>
+                            <constraint firstItem="4d5-gm-n0G" firstAttribute="top" secondItem="cxr-Ai-k68" secondAttribute="bottom" id="gwP-s0-0fy"/>
+                            <constraint firstItem="Ubc-qC-rzS" firstAttribute="top" secondItem="Mzk-BE-qWR" secondAttribute="bottom" id="khA-CK-nVC"/>
+                            <constraint firstItem="7Dx-TO-uTh" firstAttribute="top" secondItem="n09-Ob-Emw" secondAttribute="bottom" id="paV-v9-5ya"/>
+                            <constraint firstItem="Mzk-BE-qWR" firstAttribute="leading" secondItem="n09-Ob-Emw" secondAttribute="trailing" id="rIf-MF-ZPg"/>
+                            <constraint firstItem="Mzk-BE-qWR" firstAttribute="top" secondItem="rky-bK-4Si" secondAttribute="bottom" id="ror-lB-V8A"/>
+                            <constraint firstItem="L7D-Ry-m38" firstAttribute="leading" secondItem="4d5-gm-n0G" secondAttribute="trailing" id="ryh-Tv-cda"/>
+                            <constraint firstAttribute="trailing" secondItem="Ubc-qC-rzS" secondAttribute="trailing" id="ukV-Ks-YXs"/>
+                            <constraint firstItem="pOg-Ee-YHH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="uuh-be-uy5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -21,6 +348,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
