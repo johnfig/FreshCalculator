@@ -9,21 +9,27 @@
 #import "FIGViewController.h"
 
 @interface FIGViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *calulatorDisplay;
 
 @end
 
 @implementation FIGViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+  [super viewDidLoad];
+	[self setCalculatorDisplay];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Private Methods
+- (UIStatusBarStyle)preferredStatusBarStyle {
+  return UIStatusBarStyleLightContent;
+}
+
+- (void)setCalculatorDisplay {
+  CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+  if (screenSize.height > 480.0f) {
+    [self.calulatorDisplay setFont: [UIFont fontWithName:@"HelveticaNeue" size:80.0f]];
+  }
 }
 
 @end
