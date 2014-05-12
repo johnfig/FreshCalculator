@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FIGFreshCalculations.h"
+
+FIGFreshCalculations *calculation;
 
 @interface FIGViewController : UIViewController
 

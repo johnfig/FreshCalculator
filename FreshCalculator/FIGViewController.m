@@ -21,6 +21,13 @@
 	[self setCalculatorDisplay];
 }
 
+- (FIGFreshCalculations *)calculation {
+  if (!calculation) {
+    calculation = [[FIGFreshCalculations alloc] init];
+  }
+  return calculation;
+}
+
 #pragma mark - IBActions
 - (IBAction)digitPressed:(id)sender {
   NSString *digit = [[sender titleLabel] text];
@@ -61,6 +68,15 @@
   }
 }
 
+- (IBAction)operationButtonPressed:(id)sender {
+  if ([self isStillTypingNumber]) {
+    [[self calculation] setOperand:[[self.calulatorDisplay text] doubleValue]];
+    self.stillTypingNumber = NO;
+  }
+  NSString *operation = [[sender titleLabel] text];
+  double result = [[self calculation] performOperation:operation];
+  [self.calulatorDisplay setText:[NSString stringWithFormat:@"%g", result]];
+}
 
 #pragma mark - Private Methods
 - (UIStatusBarStyle)preferredStatusBarStyle {
