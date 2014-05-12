@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="80" id="xa0-j2-ELu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                <state key="normal" title="=">
+                                <state key="normal">
                                     <color key="titleColor" red="0.24313725490196078" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -340,6 +340,10 @@
                                     <constraint firstItem="ENg-Gt-uTv" firstAttribute="leading" secondItem="TnN-Cr-Ncx" secondAttribute="leading" constant="25" id="uQ4-wc-FLP"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equal-logo" translatesAutoresizingMaskIntoConstraints="NO" id="whL-5i-eXe">
+                                <rect key="frame" x="250" y="412" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -348,6 +352,7 @@
                             <constraint firstItem="1dp-2W-JNK" firstAttribute="top" secondItem="4d5-gm-n0G" secondAttribute="bottom" id="2Ra-p9-yh6"/>
                             <constraint firstItem="L7D-Ry-m38" firstAttribute="top" secondItem="EoY-oq-W8F" secondAttribute="bottom" id="6R1-tw-nU8"/>
                             <constraint firstItem="n09-Ob-Emw" firstAttribute="top" secondItem="Mx0-fW-Pzb" secondAttribute="bottom" id="7Pv-jC-rf1"/>
+                            <constraint firstItem="Ewf-pi-0NC" firstAttribute="top" secondItem="whL-5i-eXe" secondAttribute="bottom" constant="8" id="9A3-QI-mUj"/>
                             <constraint firstItem="Ewf-pi-0NC" firstAttribute="top" secondItem="F23-ck-Sgm" secondAttribute="bottom" id="AlW-z1-6Sw"/>
                             <constraint firstItem="F23-ck-Sgm" firstAttribute="top" secondItem="1dp-2W-JNK" secondAttribute="bottom" id="BKd-9T-kGJ"/>
                             <constraint firstItem="3Yi-pq-T2H" firstAttribute="leading" secondItem="Sw1-IJ-CI9" secondAttribute="trailing" id="BkV-3P-J6H"/>
@@ -379,6 +384,7 @@
                             <constraint firstItem="NLx-mq-imY" firstAttribute="top" secondItem="1vw-LB-Mog" secondAttribute="bottom" id="g6L-yX-bRz"/>
                             <constraint firstItem="4d5-gm-n0G" firstAttribute="top" secondItem="cxr-Ai-k68" secondAttribute="bottom" id="gwP-s0-0fy"/>
                             <constraint firstItem="Ubc-qC-rzS" firstAttribute="top" secondItem="Mzk-BE-qWR" secondAttribute="bottom" id="khA-CK-nVC"/>
+                            <constraint firstAttribute="trailing" secondItem="whL-5i-eXe" secondAttribute="trailing" constant="10" id="lYG-0r-KkG"/>
                             <constraint firstItem="7Dx-TO-uTh" firstAttribute="top" secondItem="n09-Ob-Emw" secondAttribute="bottom" id="paV-v9-5ya"/>
                             <constraint firstItem="Mzk-BE-qWR" firstAttribute="leading" secondItem="n09-Ob-Emw" secondAttribute="trailing" id="rIf-MF-ZPg"/>
                             <constraint firstItem="Mzk-BE-qWR" firstAttribute="top" secondItem="rky-bK-4Si" secondAttribute="bottom" id="ror-lB-V8A"/>
@@ -395,6 +401,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="equal-logo" width="60" height="60"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
